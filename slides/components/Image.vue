@@ -13,7 +13,7 @@ function getImageUrl() {
   // This path must be correct for your file
   // return new URL(props.src, '/react-workshop')
 
-  return props.src
+  return '/react-workshop' + props.src
 }
 </script>
 
