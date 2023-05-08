@@ -413,22 +413,6 @@ The left button increases the counter by one, the right button resets it to zero
 The headline below the buttons shows how often the button was clicked.
 
 ---
-
-## Click counter app
-
-Useful links:
-
-- [Template](https://github.com/moia-dev/react-workshop-click-counter-template)
-
-  Your starting point. Install it by downloading the files as .zip file, extract it into your workshop folder and run
-
-  ```bash
-    npm install
-  ```
-
-- [Solution](https://github.com/moia-dev/react-workshop-click-counter-solution)
-
----
 class: "text-center"
 ---
 
@@ -440,22 +424,6 @@ class: "text-center"
 
 New items are added with the form on top.  
 Items can be removed via a button next to the item.
-
----
-
-## ToDo list app
-
-Useful links:
-
-- [Template](https://github.com/moia-dev/react-workshop-todo-list-template)
-
-  Your starting point. Install it by downloading the files as .zip file, extract it into your workshop folder and run
-
-  ```bash
-    npm install
-  ```
-
-- [Solution](https://github.com/moia-dev/react-workshop-todo-list-solution)
 
 ---
 
