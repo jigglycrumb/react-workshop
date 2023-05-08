@@ -11,3 +11,12 @@
   position: relative;
   z-index: -1;
 }
+
+
+/* --- example css --- */
+.flashy-headline {
+  color: hotpink;
+  border: 2px solid hotpink;
+  padding: 1em;
+  text-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.1);
+}

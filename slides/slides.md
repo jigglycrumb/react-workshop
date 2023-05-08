@@ -115,7 +115,7 @@ Styles in an external file
 `index.html`
 
 ```html
-<h1 class="flashy-headline">Styled with CSS</h1>
+<h2 class="flashy-headline">Styled with CSS</h2>
 ```
 
 `style.css`
@@ -129,6 +129,10 @@ Styles in an external file
 }
 ```
 
+### Result
+
+<h2 class="flashy-headline">Styled with CSS</h2>
+
 ---
 
 ## CSS example 2
@@ -136,8 +140,12 @@ Styles in an external file
 Inline styles via _style_ attribute
 
 ```html
-<h1 style="color: tomato; border: 2px solid seagreen;">Styled with CSS</h1>
+<h1 style="color: tomato; border: 2px solid seagreen; padding: 0.5em;">Styled with CSS</h1>
 ```
+
+### Result
+
+<h1 style="color: tomato; border: 2px solid seagreen; padding: 0.5em;">Styled with CSS</h1>
 
 ---
 
@@ -186,16 +194,19 @@ Make a button do something
 
 ```html
 <button onclick="myFunction()">Try it</button>
-<p id="demo"></p>
+<p id="js-demo"></p>
 ```
 
 `script.js`
 
 ```js
 function myFunction() {
-  document.getElementById("demo").innerHTML = "Hello World";
+  document.getElementById("js-demo").innerHTML = "Hello World!";
 }
 ```
+
+### Result
+<JSDemo />
 
 ---
 
