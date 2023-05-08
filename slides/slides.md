@@ -129,8 +129,6 @@ Styles in an external file
 }
 ```
 
-[Demo](examples/css/)
-
 ---
 
 ## CSS example 2
@@ -198,8 +196,6 @@ function myFunction() {
   document.getElementById("demo").innerHTML = "Hello World";
 }
 ```
-
-[Demo](examples/js/)
 
 ---
 
