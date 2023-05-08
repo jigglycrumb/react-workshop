@@ -126,12 +126,6 @@ Inline styles via _style_ attribute
 
 Styles in an external file
 
-`index.html`
-
-```html
-<h2 class="flashy-headline">Styled with CSS</h2>
-```
-
 `style.css`
 
 ```css
@@ -141,6 +135,12 @@ Styles in an external file
   padding: 1em;
   text-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.1);
 }
+```
+
+`index.html`
+
+```html
+<h2 class="flashy-headline">Styled with CSS</h2>
 ```
 
 ### Result
@@ -163,15 +163,14 @@ Styles in an external file
 ## Javascript functions
 
 A function is a piece of code which can take parameters as input,  
-does something and then returns an output.  
+does something and then returns an output.
+
 Here is a function that adds two numbers:
 
 ```js
 function addNumbers(a, b) {
   return a + b;
 }
-
-const sum = addNumbers(2, 3); // sum is 5
 ```
 
 Functions in Javascript can also be written as an arrow function:
@@ -180,7 +179,10 @@ Functions in Javascript can also be written as an arrow function:
 const addNumbers = (a, b) => {
   return a + b;
 };
+```
 
+To use a function, you `call` it with the parameters you want:
+```js
 const sum = addNumbers(2, 3); // sum is 5
 ```
 
