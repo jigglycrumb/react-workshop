@@ -10,11 +10,7 @@ highlighter: shiki
 # show line numbers in code blocks
 lineNumbers: false
 # some information about the slides, markdown enabled
-info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
-
-  Learn more at [Sli.dev](https://sli.dev)
+info: false
 # persist drawings in exports and build
 drawings:
   persist: false
@@ -22,25 +18,10 @@ drawings:
 transition: slide-left
 # use UnoCSS
 css: unocss
+layout: intro
+title: 'React Workshop'
+titleTemplate: '%s'
 ---
-
-<!-- import { themes } from "mdx-deck";
-import buttonCounterAppScreenshot from "./assets/screenshot-click-counter-app.png";
-import todoListAppScreenshot from "./assets/screenshot-todo-list-app.png";
-
-export const theme = {
-  ...themes.book,
-  ...themes.prism,
-  styles: {
-    root: { fontSize: "80%" },
-    code: { fontSize: "70%" },
-  },
-};
-
-<Head>
-  <title>React workshop</title>
-</Head> -->
-
 # Welcome
 
 ## to the React workshop!
@@ -409,13 +390,12 @@ Start Visual Studio Code now and open the app folder.
 Let's start exploring what we got!
 
 ---
+class: "text-center"
+---
 
 ## Click counter app
 
-<!-- <img
-src={buttonCounterAppScreenshot}
-style={{ width: "640px", height: "376px", border: "3px solid black" }}
-/> -->
+<Image src="/click-counter.png" />
 
 The left button increases the counter by one, the right button resets it to zero.  
 The headline below the buttons shows how often the button was clicked.
@@ -437,13 +417,12 @@ Useful links:
 - [Solution](https://github.com/moia-dev/react-workshop-click-counter-solution)
 
 ---
+class: "text-center"
+---
 
 ## ToDo list app
 
-<!-- <img
-src={todoListAppScreenshot}
-style={{ width: "640px", height: "376px", border: "3px solid black" }}
-/> -->
+<Image src="/todo-list.png" />
 
 New items are added with the form on top.  
 Items can be removed via a button next to the item.
@@ -476,8 +455,11 @@ Today, we had a look at:
 - How React components work together to compose an application
 
 ---
+layout: intro
+class: "text-center"
+---
 
-## Thank you for joining the React workshop!
+# Thank you for joining!
 
 I hope you had fun!  
 Please let me know what can be improved 😊
