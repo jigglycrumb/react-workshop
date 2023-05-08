@@ -395,7 +395,9 @@ class: "text-center"
 
 ## Click counter app
 
-<Image src="/click-counter.png" />
+<div class="image-wrapper">
+  <img src="/click-counter.png" />
+</div>
 
 The left button increases the counter by one, the right button resets it to zero.  
 The headline below the buttons shows how often the button was clicked.
@@ -422,7 +424,9 @@ class: "text-center"
 
 ## ToDo list app
 
-<Image src="/todo-list.png" />
+<div class="image-wrapper">
+  <img src="/todo-list.png" />
+</div>
 
 New items are added with the form on top.  
 Items can be removed via a button next to the item.
