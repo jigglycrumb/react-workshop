@@ -4,6 +4,7 @@
   margin: 1rem auto;
   border-radius: 0.5rem;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 5px 0px inset;
+  overflow: hidden;
 }
 
 .image-wrapper img {
