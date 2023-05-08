@@ -156,7 +156,7 @@ Styles in an external file
 - It brings interactivity to the otherwise static web
 
 - It does that by listening to user actions,  
-  manipulating the HTML tree and talking to backend servers
+  manipulating the DOM tree and talking to backend servers
 
 ---
 
