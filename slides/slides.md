@@ -110,6 +110,20 @@ DOM stands for "Document Object Model".
 
 ## CSS example 1
 
+Inline styles via _style_ attribute
+
+```html
+<h1 style="color: tomato; border: 2px solid seagreen; padding: 0.5em;">Styled with CSS</h1>
+```
+
+### Result
+
+<h1 style="color: tomato; border: 2px solid seagreen; padding: 0.5em;">Styled with CSS</h1>
+
+---
+
+## CSS example 2
+
 Styles in an external file
 
 `index.html`
@@ -132,20 +146,6 @@ Styles in an external file
 ### Result
 
 <h2 class="flashy-headline">Styled with CSS</h2>
-
----
-
-## CSS example 2
-
-Inline styles via _style_ attribute
-
-```html
-<h1 style="color: tomato; border: 2px solid seagreen; padding: 0.5em;">Styled with CSS</h1>
-```
-
-### Result
-
-<h1 style="color: tomato; border: 2px solid seagreen; padding: 0.5em;">Styled with CSS</h1>
 
 ---
 
