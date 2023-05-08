@@ -1,0 +1,17 @@
+.App {
+  width: 50ch;
+  margin: 0 auto;
+}
+
+input[type=text] {
+  margin-right: 16px;
+  width: 40ch;
+}
+
+ul {
+  width: 40ch;
+}
+
+li {
+  margin-bottom: 16px;
+}

@@ -212,7 +212,7 @@ function myFunction() {
 
 ## JavaScript problems before React
 
-- Having a bunch of functions that handle different things can quickly get messy,  
+- Having a loose collection of functions that handle different things can quickly get messy,  
   causing bugs and unwanted side effects
 
 - Changing the HTML structure can break selectors and cause bugs
