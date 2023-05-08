@@ -21,6 +21,7 @@ css: unocss
 layout: intro
 title: 'React Workshop'
 titleTemplate: '%s'
+favicon: '/react.svg'
 ---
 # Welcome
 
