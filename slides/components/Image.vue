@@ -11,7 +11,7 @@ const props = defineProps({
 
 function getImageUrl() {
   // This path must be correct for your file
-  return new URL(props.src, import.meta.url)
+  return new URL(props.src, '/react-workshop')
 }
 </script>
 
