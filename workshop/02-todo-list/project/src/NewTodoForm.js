@@ -1,3 +1,19 @@
+/*
+  This component represents the form to add new todo items
+  It should render this HTML
+
+  <div>
+    <h3>Add new ToDo</h3>
+    <input type="text" placeholder="What do you have to do?" />
+    <button type="button">
+      Save
+    </button>
+  </div>
+
+  It receives one prop:
+    - addTodo: A function to add a new todo item to the list
+*/
+
 import { useRef, useState } from "react";
 
 export function NewTodoForm({ addTodo }) {
