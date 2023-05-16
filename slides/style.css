@@ -1,3 +1,8 @@
+em,
+strong {
+  color: var(--prism-namespace);
+}
+
 .image-wrapper {
   width: 640px;
   height: 368px;
@@ -12,6 +17,14 @@
   z-index: -1;
 }
 
+pre:not(.slidev-code) {
+  font-size: 0.7em;
+  color: var(--prism-class);
+}
+
+.shiki-container {
+  margin-bottom: 1rem;
+}
 
 /* --- example css --- */
 .flashy-headline {

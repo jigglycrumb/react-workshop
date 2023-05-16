@@ -55,12 +55,12 @@ favicon: '/react.svg'
 
 ## HTML
 
-- HTML is a static _markup_ language
-- It consists of &lt;tags&gt;
+- HTML is a static __markup__ language
+- It consists of __&lt;tags&gt;__
   ```html
   <h1>Hello World</h1>
   ```
-- Tags can have attributes
+- Tags can have __attributes__
   ```html
   <a href="http://google.com">Go to Google</a>
   ```
@@ -93,7 +93,7 @@ Every website starts with this structure
 </html>
 ```
 
-The website is built by nesting more tags into the `body` tag.  
+The website is built by nesting more tags into the __body__ tag.  
 This structure is called the DOM tree.  
 DOM stands for "Document Object Model".
 
@@ -110,7 +110,7 @@ DOM stands for "Document Object Model".
 
 ## CSS example 1
 
-Inline styles via _style_ attribute
+Inline styles via __style__ attribute
 
 ```html
 <h1 style="color: tomato; border: 2px solid seagreen; padding: 0.5em;">Styled with CSS</h1>
@@ -126,7 +126,7 @@ Inline styles via _style_ attribute
 
 Styles in an external file
 
-`style.css`
+    style.css
 
 ```css
 .flashy-headline {
@@ -137,7 +137,7 @@ Styles in an external file
 }
 ```
 
-`index.html`
+    index.html
 
 ```html
 <h2 class="flashy-headline">Styled with CSS</h2>
@@ -151,12 +151,19 @@ Styles in an external file
 
 ## JavaScript
 
-- Javascript is a _programming_ language
+- Javascript is a __programming__ language
 
 - It brings interactivity to the otherwise static web
 
 - It does that by listening to user actions,  
   manipulating the DOM tree and talking to backend servers
+
+---
+
+## Javascript variables
+
+TODO
+
 
 ---
 
@@ -181,7 +188,7 @@ const addNumbers = (a, b) => {
 };
 ```
 
-To use a function, you `call` it with the parameters you want:
+To use a function, you __call__ it with the parameters you want:
 ```js
 const sum = addNumbers(2, 3); // sum is 5
 ```
@@ -192,14 +199,14 @@ const sum = addNumbers(2, 3); // sum is 5
 
 Make a button do something
 
-`index.html`
+    index.html
 
 ```html
 <button onclick="myFunction()">Try it</button>
 <p id="js-demo"></p>
 ```
 
-`script.js`
+    script.js
 
 ```js
 function myFunction() {
@@ -229,17 +236,17 @@ function myFunction() {
 
 ## So, how did React solve these issues?
 
-- _Component-based_  
+- __Component-based__  
   A React component can encapsulate everything it needs to work,  
   usually a piece of HTML, styles & some business logic.  
   Components can be composed to form bigger components
 
-- _Minimal API_  
+- __Minimal API__  
   React is meant for building UI only.  
   It's job is to keep your app state in sync with the UI.  
   You have the freedom to handle all other things the way you want
 
-- _Ease of use_  
+- __Ease of use__  
   React introduces a special syntax called JSX that is very similar to HTML
 
 ---
@@ -272,13 +279,13 @@ The same headline written in JSX looks like this
 
 ## Differences between HTML and JSX
 
-- The _class_ attribute in HTML is called _className_ in JSX
+- The __class__ attribute in HTML is called __className__ in JSX
 
 - CSS must be written in camelCase,  
-  e.g. _font-size_ becomes _fontSize_,  
-  _border-width_ becomes _borderWidth_ etc
+  e.g. __font-size__ becomes __fontSize__,  
+  __border-width__ becomes __borderWidth__ etc
 
-- Attributes are called _props_ in the React world
+- Attributes are called __props__ in the React world
 
 ---
 
@@ -287,8 +294,8 @@ The same headline written in JSX looks like this
 - React offers built-in components for all HTML tags.  
   These are the basic building blocks for everything else
 
-- Built-in components always start with a small letter, e.g. _&lt;div&gt;_  
-  Your own components have to start with a capital letter, e.g. _&lt;User&gt;_
+- Built-in components always start with a small letter, e.g. __&lt;div&gt;__  
+  Your own components have to start with a capital letter, e.g. __&lt;User&gt;__
 
 - Components are functions that execute their business logic and return the resulting HTML
 
@@ -306,7 +313,7 @@ Let's create a simple greeting component. We want this HTML as result
 <h3 style="color: orange;">Hello, Charles!</h3>
 ```
 
-The only variable part in this is the user name, _Charles_. So the JSX of our component could look like this
+The only variable part in this is the user name, __Charles__. So the JSX of our component could look like this
 
 ```jsx
 <Greeting name="Charles" />
@@ -346,7 +353,7 @@ Today, we will build:
 
 ## What you will need
 
-- A Github account with access to the MOIA org
+- A Github account
 
 - A Macbook with [Homebrew](https://brew.sh/) installed
 
@@ -398,6 +405,12 @@ and you should see a spinning React logo.
 Start Visual Studio Code now and open the app folder.
 
 Let's start exploring what we got!
+
+---
+
+## Playground App - folder structure
+
+TODO
 
 ---
 class: "text-center"
