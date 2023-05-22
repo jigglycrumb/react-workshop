@@ -1,10 +1,10 @@
 <script>
 export default {
     props: {
-        top: Number,
-        left: Number,
-        width: Number,
-        height: Number,
+        top: String,
+        left: String,
+        width: String,
+        height: String,
     },
     computed: {
         style() {
@@ -18,12 +18,14 @@ export default {
 </script>
 
 <template>
-    <div class="highlight-box" :style="style">{{ style }}</div>
+    <div class="highlight-box" :style="style"></div>
 </template>
 
 <style>
     .highlight-box {
         position: absolute;
-        border: 2px solid red;
+        border: 2px solid #0ad44f;
+        border-radius: 5px;
+        box-shadow: 2px 2px 0 0 rgba(0,0,0,0.25);
     }
 </style>

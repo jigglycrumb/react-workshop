@@ -48,11 +48,13 @@ favicon: '/react.svg'
 
 - HTML
 - CSS
-- JavaScript
+- Javascript
 - React
 
 ---
-
+preload: false
+clicks: 4
+---
 ## HTML
 
 - HTML is a static __markup__ language
@@ -76,6 +78,16 @@ favicon: '/react.svg'
   </div>
   ```
 
+
+<div v-if="$slidev.nav.clicks === 1">
+  <Box top=157 left=84 width=34 height=24 />
+  <Box top=157 left=194 width=38 height=24 />
+</div>
+
+<Box top=239 left=106 width=178 height=24 v-if="$slidev.nav.clicks === 2" />
+<Box top=321 left=250 width=24 height=24 v-if="$slidev.nav.clicks === 3" />
+<Box top=403 left=84 width=50 height=78 v-if="$slidev.nav.clicks === 4" />
+
 ---
 
 ## The DOM tree
@@ -94,14 +106,14 @@ Every website starts with this structure
 ```
 
 The website is built by nesting more tags into the __body__ tag.  
-This structure is called the DOM tree.  
+This structure is called the __DOM tree__.  
 DOM stands for "Document Object Model".
 
 ---
 
 ## CSS
 
-- CSS is a language used to style HTML
+- CSS is a language used to __style__ HTML
 
 - It provides a set of styling attributes  
   to make your HTML look the way you want
@@ -149,11 +161,11 @@ Styles in an external file
 
 ---
 
-## JavaScript
+## Javascript
 
 - Javascript is a __programming__ language
 
-- It brings interactivity to the otherwise static web
+- It brings __interactivity__ to the otherwise static web
 
 - It does that by listening to user actions,  
   manipulating the DOM tree and talking to backend servers
@@ -162,15 +174,40 @@ Styles in an external file
 
 ## Javascript variables
 
-TODO
+In programming, a __variable__ is a container the programmer can use to store and access data.  
+Every variable has a name and the data inside is called __value__.
 
+A variable in Javascript is declared by using one of the keywords __const__, __let__, __var__.
 
+__const__ & __let__ - the modern way:
+
+```js
+const greetingText = "Hello!";
+greetingText = "Goodbye!"; // error, you can't assign a new value to a const
+
+let someNumber = 42;
+someNumber = 23; // this is fine
+```
+
+__var__ - the classic way:
+
+```js
+var someValue = 42;
+console.log(someValue); // prints 5
+
+someValue = "Hello!";
+console.log(someValue); // prints "Hello!"
+```
+
+---
+clicks: 4
+preload: false
 ---
 
 ## Javascript functions
 
-A function is a piece of code which can take parameters as input,  
-does something and then returns an output.
+A function is a container for a piece of code.  
+It has a name and can take parameters as input, does something and returns a value.
 
 Here is a function that adds two numbers:
 
@@ -193,9 +230,29 @@ To use a function, you __call__ it with the parameters you want:
 const sum = addNumbers(2, 3); // sum is 5
 ```
 
+<div v-if="$slidev.nav.clicks === 1">
+  <Box top=113 left=115 width=51 height=24 />
+  <Box top=196 left=126 width=78 height=24 />
+</div>
+
+<div v-if="$slidev.nav.clicks === 2">
+  <Box top=113 left=271 width=95 height=24 />
+  <Box top=196 left=200 width=46 height=24 />
+</div>
+
+<div v-if="$slidev.nav.clicks === 3">
+  <Box top=113 left=437 width=132 height=24 />
+  <Box top=214 left=124 width=46 height=24 />
+</div>
+
+<div v-if="$slidev.nav.clicks === 4">
+  <Box top=113 left=603 width=122 height=24 />
+  <Box top=214 left=76 width=50 height=24 />
+</div>
+
 ---
 
-## JavaScript example
+## Javascript example
 
 Make a button do something
 
@@ -219,18 +276,18 @@ function myFunction() {
 
 ---
 
-## JavaScript problems before React
+## Javascript problems before React
 
 - Having a loose collection of functions that handle different things can quickly get messy,  
   causing bugs and unwanted side effects
 
-- Changing the HTML structure can break selectors and cause bugs
+- Changing the HTML structure can break things and cause bugs
 
 - Developers need to know the whole app to not accidentally overwrite function names,  
   class names, ids etc
 
-- There were frameworks around which tried to solve these problems,  
-  but they were often opinionated and complex
+- There are other frameworks around which try to solve these problems,  
+  but they are often opinionated and complex, especially at the time when React came out
 
 ---
 
@@ -253,13 +310,11 @@ function myFunction() {
 
 ## JSX
 
-- JSX is an addition to the JavaScript syntax and comes with React
+- JSX is an addition to the Javascript syntax and comes with React
 
 - It is very similar to HTML and eases the transition from design to code
 
----
-
-## JSX example
+__JSX example__
 
 Here is our headline from the CSS example again
 
@@ -344,16 +399,15 @@ And that's all! 😎
 
 ## What will we do today?
 
-Today, we will build:
+Today, we will:
 
-- A button that counts how often it is clicked
-- A simple ToDo list app
+- Explore the structure of a basic React project
+- Build an app with a button that counts how often it is clicked
+- Build a simple ToDo list app
 
 ---
 
 ## What you will need
-
-- A Github account
 
 - A Macbook with [Homebrew](https://brew.sh/) installed
 
@@ -363,31 +417,34 @@ Today, we will build:
     brew install node
   ```
 
-- VS Code - install it with
+- VSCode - install it with
   ```bash
     brew install visual-studio-code
   ```
+
+- Clone or download the [workshop repository](https://github.com/jigglycrumb/react-workshop)  
+  It contains these slides and all the workshop exercise files
 
 ---
 
 ## Let's get started!
 
-First we will bootstrap a fresh react app to see what it contains:
+First we will bootstrap a fresh React app to see what it contains:
 
-- create a new folder for the workshop projects
-- change to that folder
+- Open a folder where you want the new app to be created
   ```
     cd my-folder
   ```
-- bootstrap the playground app
+- Bootstrap the playground app.  
+  This will create a new folder __playground-app__ inside your current folder.
   ```bash
     npx create-react-app playground-app
   ```
-- jump into the app folder
+- Jump into the new app folder
   ```bash
     cd playground-app
   ```
-- run the app
+- Run the app
   ```bash
     npm start
   ```
@@ -396,13 +453,13 @@ First we will bootstrap a fresh react app to see what it contains:
 
 ## Playground app
 
-After starting the app, your browser should open at
+After starting the app, your browser opens
 
 [http://localhost:3000](http://localhost:3000)
 
-and you should see a spinning React logo.
+and you see a spinning React logo.
 
-Start Visual Studio Code now and open the app folder.
+Start VSCode now and open the app folder.
 
 Let's start exploring what we got!
 
@@ -410,7 +467,15 @@ Let's start exploring what we got!
 
 ## Playground App - folder structure
 
-TODO
+These files have been created for us:
+
+- __node_modules__ This folder contains React and other libraries our project uses
+- __public__ Static assets like images and fonts go here
+- __src__ Our source code  
+  This is the folder you'll use most. You can organize the files in here like you wish.
+- __src/App.js__ The main component of the app and entry point for our code
+- __package-lock.json__ This file is used by NPM and usually not touched manually
+- __package.json__ Contains meta data about your project. You can add scripts like a build script here
 
 ---
 class: "text-center"
@@ -426,6 +491,22 @@ The left button increases the counter by one, the right button resets it to zero
 The headline below the buttons shows how often the button was clicked.
 
 ---
+
+## Click counter app - setup
+
+- Open the folder __workshop/01-click-counter/project__ in VSCode and your terminal
+- In your terminal run
+  ```bash
+    npm install
+  ```
+- Then run the app
+  ```bash
+    npm start
+  ```
+
+- Have a look at __workshop/01-click-counter/project/src/App.js__ as your starting point
+
+---
 class: "text-center"
 ---
 
@@ -437,6 +518,23 @@ class: "text-center"
 
 New items are added with the form on top.  
 Items can be removed via a button next to the item.
+
+
+---
+
+## ToDo list app - setup
+
+- Open the folder __workshop/02-todo-list/project__ in VSCode and your terminal
+- In your terminal run
+  ```bash
+    npm install
+  ```
+- Then run the app
+  ```bash
+    npm start
+  ```
+
+- Have a look at __workshop/02-todo-list/project/src/App.js__ as your starting point
 
 ---
 
@@ -456,5 +554,5 @@ class: "text-center"
 
 # Thank you for joining!
 
-I hope you had fun!  
-Please let me know what can be improved 😊
+## I hope you had fun!  
+## Please let me know what can be improved 😊

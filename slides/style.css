@@ -1,6 +1,15 @@
 em,
 strong {
-  color: var(--prism-namespace);
+  color: #f99d13;
+}
+
+h2 {
+  color: #f99d13;
+}
+
+.dark .highlight-box {
+  border: 2px solid #75daff;
+  box-shadow: 2px 2px 0 0 rgba(255, 255, 255, 0.25);
 }
 
 .image-wrapper {
