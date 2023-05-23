@@ -399,8 +399,6 @@ And that's all! 😎
 
 ## What will we do today?
 
-Today, we will:
-
 - Explore the structure of a basic React project
 - Build an app with a button that counts how often it is clicked
 - Build a simple ToDo list app
