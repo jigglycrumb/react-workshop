@@ -1,5 +1,5 @@
 <template>
-    <button class="js-demo-button" @click="myFunction()">Try it</button>
+    <button class="js-demo-button" @click="myFunction()">Greet me!</button>
     <p id="js-demo">&nbsp;</p>
 </template>
 

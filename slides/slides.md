@@ -247,7 +247,7 @@ Make a button do something
     index.html
 
 ```html
-<button onclick="myFunction()">Try it</button>
+<button onclick="myFunction()">Greet me!</button>
 <p id="js-demo"></p>
 ```
 
