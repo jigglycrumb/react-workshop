@@ -31,19 +31,6 @@ favicon: '/react.svg'
 
 ---
 
-## Follow along
-
-- You can find this presentation at:  
-   [https://jigglycrumb.github.io/react-workshop](https://jigglycrumb.github.io/react-workshop)
-
-- The repository can be found here:  
-   [https://github.com/jigglycrumb/react-workshop](https://github.com/jigglycrumb/react-workshop)
-
-- All slides in one document:  
-  [https://github.com/jigglycrumb/react-workshop/blob/main/slides/slides.md](https://github.com/jigglycrumb/react-workshop/blob/main/slides/slides.md)
-
----
-
 ## Let's cover some basics before we start coding
 
 - HTML
@@ -66,16 +53,16 @@ clicks: 4
   ```html
   <a href="http://google.com">Go to Google</a>
   ```
-- They can be self-closing …
-  ```html
-  <img src="example.jpg" />
-  ```
-- … or nested
+- They can be nested
   ```html
   <div>
     <h1>Hello World</h1>
     <p>Lorem ipsum dolor sit amet</p>
   </div>
+  ```
+- … or self-closing
+  ```html
+  <img src="example.jpg" />
   ```
 
 
@@ -85,8 +72,8 @@ clicks: 4
 </div>
 
 <Box top=239 left=106 width=178 height=24 v-if="$slidev.nav.clicks === 2" />
-<Box top=321 left=250 width=24 height=24 v-if="$slidev.nav.clicks === 3" />
-<Box top=403 left=84 width=50 height=78 v-if="$slidev.nav.clicks === 4" />
+<Box top=321 left=84 width=50 height=78 v-if="$slidev.nav.clicks === 3" />
+<Box top=457 left=250 width=24 height=24 v-if="$slidev.nav.clicks === 4" />
 
 ---
 
@@ -200,14 +187,13 @@ console.log(someValue); // prints "Hello!"
 ```
 
 ---
-clicks: 4
+clicks: 5
 preload: false
 ---
 
 ## Javascript functions
 
-A function is a container for a piece of code.  
-It has a name and can take parameters as input, does something and returns a value.
+A function is a container for a piece of code.
 
 Here is a function that adds two numbers:
 
@@ -216,6 +202,8 @@ function addNumbers(a, b) {
   return a + b;
 }
 ```
+
+It has a name and can take parameters as input, does something and returns a value.
 
 Functions in Javascript can also be written as an arrow function:
 
@@ -231,23 +219,23 @@ const sum = addNumbers(2, 3); // sum is 5
 ```
 
 <div v-if="$slidev.nav.clicks === 1">
-  <Box top=113 left=115 width=51 height=24 />
-  <Box top=196 left=126 width=78 height=24 />
+  <Box top=255 left=115 width=50 height=24 />
+  <Box top=172 left=126 width=78 height=24 />
 </div>
 
 <div v-if="$slidev.nav.clicks === 2">
-  <Box top=113 left=271 width=95 height=24 />
-  <Box top=196 left=200 width=46 height=24 />
+  <Box top=255 left=271 width=95 height=24 />
+  <Box top=172 left=200 width=46 height=24 />
 </div>
 
 <div v-if="$slidev.nav.clicks === 3">
-  <Box top=113 left=437 width=132 height=24 />
-  <Box top=214 left=124 width=46 height=24 />
+  <Box top=255 left=437 width=132 height=24 />
+  <Box top=190 left=124 width=46 height=24 />
 </div>
 
 <div v-if="$slidev.nav.clicks === 4">
-  <Box top=113 left=603 width=122 height=24 />
-  <Box top=214 left=76 width=50 height=24 />
+  <Box top=255 left=603 width=122 height=24 />
+  <Box top=190 left=76 width=50 height=24 />
 </div>
 
 ---
@@ -293,7 +281,7 @@ function myFunction() {
 
 ## So, how did React solve these issues?
 
-- __Component-based__  
+- __Based on components__  
   A React component can encapsulate everything it needs to work,  
   usually a piece of HTML, styles & some business logic.  
   Components can be composed to form bigger components
@@ -538,12 +526,24 @@ Items can be removed via a button next to the item.
 
 ## Wrap up
 
-Today, we had a look at:
+Today, we learned
 
-- Why React was created and what it is used for
-- How to set up a new React app
+- Why React was created and what it can do
 - How HTML can be converted into React components
+- How to set up a new React app
 - How React components work together to compose an application
+
+---
+
+## Useful links
+- [Revisit these slides](https://jigglycrumb.github.io/react-workshop) whenever you want
+- Dive deeper with the [React documentation](https://react.dev/learn)
+
+## For Designers
+- [Astro](https://astro.build) is a new framework for building websites.  
+It's based on components like React but even more simple to use. You can create components just with HTML & CSS, and even add React or other Frameworks when you need it.  
+Check it out if you want to build somthing simple like e.g. a portfolio site.
+
 
 ---
 layout: intro
