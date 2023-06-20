@@ -3,7 +3,7 @@
   It should render this HTML
 
   <li>
-    Todo item 1 <button>remove</button>
+    Todo item 1 <button type="button">remove</button>
   </li>
 
   It receives two props:

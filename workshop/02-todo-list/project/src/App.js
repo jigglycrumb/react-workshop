@@ -12,13 +12,13 @@
 
       <ul>
         <li>
-          Todo item 1 <button>remove</button>
+          Todo item 1 <button type="button">remove</button>
         </li>
         <li>
-          Todo item 2 <button>remove</button>
+          Todo item 2 <button type="button">remove</button>
         </li>
         <li>
-          Todo item 3 <button>remove</button>
+          Todo item 3 <button type="button">remove</button>
         </li>
       </ul>
     </div>
